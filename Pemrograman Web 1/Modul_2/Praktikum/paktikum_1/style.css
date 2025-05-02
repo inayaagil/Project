@@ -1,0 +1,49 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: rgb(148, 196, 239);
+    text-align: center;
+}
+
+#judul {
+    color:blue;
+    font-size: 24px;
+}
+
+.deskripsi {
+    color:gray;
+    font-style: italic;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(red, green, blue, alpha);
+    width: 250px;
+    margin: 10px auto;
+}
+
+.card:hover {
+    background-color: hotpink;
+}
+button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 15px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid pink;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

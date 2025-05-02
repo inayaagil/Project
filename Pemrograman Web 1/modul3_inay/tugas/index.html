@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Sederhana</h1>
+
+    <label>Bilangan Pertama:</label>
+    <input type="number" id="bil1"><br><br>
+
+    <label>Bilangan Kedua:</label>
+    <input type="number" id="bil2"><br><br>
+
+    <label>Pilih Operasi:</label>
+    <select id="operator">
+      <option value="tambah">Penjumlahan (+)</option>
+      <option value="kurang">Pengurangan (-)</option>
+      <option value="kali">Perkalian (×)</option>
+      <option value="bagi">Pembagian (/)</option>
+    </select><br><br>
+
+    <button onclick="hitung()">Hitung</button>
+    <button onclick="ulang()">Ulang</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

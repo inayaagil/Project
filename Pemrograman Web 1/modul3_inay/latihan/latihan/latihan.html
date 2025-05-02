@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input Bilangan</title>
+        <script>
+            function kurangi() {
+                var bil1 = parsefloat(document.getElementById("bilangan1").value);
+                var bil2 = parsefloat(document.getElementById("bilangan2").value);
+
+                if (isnan(bil1)) bil1 = 0.0;
+                if (isnan(bil2)) bil2 = 0.0;
+
+                var hasil = bil1 - bil2;
+                document.getElementById("hasil").innertext = "Hasil Pengurangan = " + hasil;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Masukan Dua Bilangan</h1>
+        <form>
+            <p>
+                Bilangan Pertama: <input type="text" id="bilangan1" size="11">
+                <br>
+                Bilangan Kedua: <input type="text" id="bilangan2" size="11">
+            </p>
+            <p>
+                <input type="button" value="kurangkan" onclick="kurangi()">
+            </p>
+        </form>
+        <p id="hasil"></p>
+    </body>
+</html>

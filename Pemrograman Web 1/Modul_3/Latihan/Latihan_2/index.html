@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hari 6 - Kalkulator Infaq Harian</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Kalkulator Infaq Harian</h1>
+            <p>Catat infaq yang kamu berikan setiap hari selama bulan Ramadhan.</p>
+
+            <input type="number" id="amountinput" placeholder="Masukan nominal (Rp)">
+            <button onclick="addinfaq()">Tambah infaq</button>
+
+            <h3>Riwayat Infaq</h3>
+            <ul id="infaqlist"></ul>
+
+            <h3>Total Infaq : Rp <span id="totalamount">0</span></h3>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
